@@ -1,0 +1,40 @@
+<div class="body">
+  <nz-list nzGrid [nzLoading]="isGamesLoading">
+    <div nz-row [nzGutter]="24">
+      <div
+        nz-col
+        [nzXXl]="8"
+        [nzXl]="8"
+        [nzLg]="12"
+        [nzMd]="12"
+        [nzSm]="24"
+        [nzXs]="24"
+        *ngFor="let game of games"
+      >
+        <nz-list-item>
+          <nz-card
+            nzHoverable
+            [nzCover]="coverTemplate"
+            [nzActions]="[actionView]"
+          >
+            <nz-card-meta
+              [nzTitle]="game.name | uppercase"
+              [nzDescription]="descTemplate"
+            ></nz-card-meta>
+          </nz-card>
+          <ng-template #descTemplate>
+            <p nz-typography nzExpandable nzEllipsisRows="4" nzEllipsis>
+              {{ game.description }}
+            </p>
+          </ng-template>
+          <ng-template #coverTemplate>
+            <img class="game-image" alt="game image" [src]="game.photoUrl" />
+          </ng-template>
+          <ng-template #actionView>
+            <i nz-icon nzType="appstore" nzTheme="twotone"></i>
+          </ng-template>
+        </nz-list-item>
+      </div>
+    </div>
+  </nz-list>
+</div>

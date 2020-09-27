@@ -1,0 +1,51 @@
+.logo {
+  width: 120px;
+  height: 31px;
+  background-color: #1565c0;
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+.menu {
+  line-height: 64px;
+  display: flex;
+  padding: 0 5vw;
+}
+
+.account-menu {
+  width: 125px;
+}
+
+nz-header {
+  background-color: #fff;
+}
+
+nz-content {
+  padding: 2vh 15vw;
+  width: 100%;
+}
+
+.inner-content {
+  background-color: #fff;
+  padding: 2rem;
+  min-height: 75vh;
+  height: fit-content;
+}
+
+.account-button {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+nz-layout {
+  /*  display: flex;
+  flex-direction: column;*/
+  min-height: 100%;
+  height: fit-content;
+}
+
+@media (max-width: 768px) {
+  nz-content {
+    padding: 2vh 5vw;
+  }
+}

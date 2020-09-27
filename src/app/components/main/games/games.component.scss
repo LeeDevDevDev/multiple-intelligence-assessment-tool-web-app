@@ -1,0 +1,22 @@
+.body {
+  width: 100%;
+}
+
+p {
+  overflow: auto;
+  height: 100px;
+  text-overflow: clip;
+  &::-webkit-scrollbar {
+    width: 2px;
+    background: #fff;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(21, 101, 192, 0.5);
+  }
+}
+
+.game-image {
+  height: 200px;
+  object-fit: cover;
+}

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mithesis-d4feb": {
+      "hosting": {
+        "thesis-webapp": [
+          "mithesis-d4feb"
+        ]
+      }
+    }
+  }
+}

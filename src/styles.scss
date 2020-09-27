@@ -1,0 +1,26 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --border-radius: 6px;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  background-color: var(--white);
+  height: fit-content;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.full-width {
+  width: 100%;
+}
